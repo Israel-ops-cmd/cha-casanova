@@ -1,8 +1,12 @@
+import { GlobalStyle } from "./styles/globalStyle"
 import { Hero } from "./components/hero"
 	
 function App() {
 	return (
-	  <Hero />
+    <>
+      <GlobalStyle />
+	    <Hero />
+    </>
   )
 }
 

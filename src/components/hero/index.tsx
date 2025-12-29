@@ -4,7 +4,7 @@ export const Hero: React.FC = () => {
     return (
         <Container>
             <NamesContainer>
-                Israel e Heloyza
+                Heloyza e Israel
             </NamesContainer>
             <Elements>
                 <ul>
