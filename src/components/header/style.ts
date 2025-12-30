@@ -10,6 +10,7 @@ export const Container = styled.div`
 `
 export const StyledH1 = styled.h1`
     font-size: ${pxToRem(30)};
+    font-family: 'Playfair Display', serif;
 `
 export const Image = styled.div`
     display: flex;
@@ -23,4 +24,17 @@ export const Image = styled.div`
         border-radius: ${pxToRem(15)};
         margin-top: ${pxToRem(30)};
     }
+`
+export const Verse = styled.p`
+    margin-top: ${pxToRem(30)};
+    font-size: ${pxToRem(15)};
+    max-width: ${pxToRem(500)};
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+`
+export const ReferenceVerse = styled.h2`
+    margin-top: ${pxToRem(10)};
+    font-size: ${pxToRem(20)};
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
 `

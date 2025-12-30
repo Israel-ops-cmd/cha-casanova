@@ -9,6 +9,7 @@ export const Container = styled.div`
 `
 export const NamesContainer = styled.p`
     font-size: ${pxToRem(30)};
+    font-family: 'Playfair Display', serif;
 `
 export const Elements = styled.nav`
     ul {
@@ -18,6 +19,7 @@ export const Elements = styled.nav`
         list-style: none;
         margin: 0;
         padding: 0;
+        font-family: 'Playfair Display', serif;
     }
 `
 
