@@ -1,0 +1,160 @@
+import styled from "styled-components"
+import { pxToRem } from "../../utils/utils"
+
+export const Container = styled.div`
+  margin-top: ${pxToRem(150)};
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+`
+
+export const FirstPart = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+`
+
+export const StyledH1 = styled.h1`
+  font-size: ${pxToRem(30)};
+  font-weight: 400;
+`
+
+export const Styledp = styled.p`
+  max-width: ${pxToRem(350)};
+  margin-top: ${pxToRem(50)};
+  font-size: ${pxToRem(15)};
+`
+
+export const StyledButton = styled.button`
+  margin-top: ${pxToRem(15)};
+  padding: ${pxToRem(14)} ${pxToRem(60)};
+  border: ${pxToRem(1)} solid #4e361c;
+  border-radius: ${pxToRem(12)};
+  background: transparent;
+
+  font-family: 'Lora', serif;
+  font-size: ${pxToRem(16)};
+  font-weight: 500;
+  color: #4e361c;
+
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: #4e361c;
+    color: #f8f3ec;
+  }
+`
+
+export const SecondPart = styled.div`
+  margin-top: ${pxToRem(60)};
+  display: grid;
+  grid-template-columns: repeat(4, minmax(180px, 250px));
+  gap: ${pxToRem(100)};
+  width: 100%;
+  justify-content: center;
+`
+
+export const Card = styled.div`
+  background-color: #ffffff;
+  border-radius: ${pxToRem(16)};
+  overflow: hidden;
+  max-width: ${pxToRem(300)};
+  box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-6px);
+  }
+`
+
+export const CardImage = styled.div`
+  width: 100%;
+  height: ${pxToRem(180)};
+  overflow: hidden;
+  background-color: #f8f3ec;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+`
+
+export const CardContent = styled.div`
+  padding: ${pxToRem(20)};
+  text-align: center;
+`
+
+export const CardTitle = styled.h3`
+  font-size: ${pxToRem(16)};
+  font-weight: 500;
+  margin-bottom: ${pxToRem(8)};
+`
+
+export const CardPrice = styled.p`
+  font-size: ${pxToRem(14)};
+  margin-bottom: ${pxToRem(12)};
+`
+
+/* 🔹 NOVOS COMPONENTES */
+
+export const StoreLabel = styled.span`
+  font-size: ${pxToRem(12)};
+  color: #8a7a65;
+  margin-bottom: ${pxToRem(10)};
+  display: block;
+`
+
+export const ButtonGroup = styled.div`
+  display: flex;
+  gap: ${pxToRem(8)};
+  justify-content: center;
+  align-items: center;
+`
+
+export const SelectButton = styled.button`
+  padding: ${pxToRem(8)} ${pxToRem(20)};
+  border-radius: ${pxToRem(20)};
+  border: 1px solid #4e361c;
+  background: transparent;
+  color: #4e361c;
+
+  font-family: 'Lora', serif;
+  font-size: ${pxToRem(14)};
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: #4e361c;
+    color: #f8f3ec;
+  }
+`
+
+export const AmazonButton = styled.a`
+  padding: ${pxToRem(8)} ${pxToRem(12)};
+  border-radius: ${pxToRem(20)};
+  border: 1px solid #ddd;
+  background: #f8f3ec;
+  color: #4e361c;
+
+  font-family: 'Lora', serif;
+  font-size: ${pxToRem(12)};
+  text-decoration: none;
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: #ff9900;
+    color: #ffffff;
+    border-color: #ff9900;
+  }
+`
