@@ -6,7 +6,7 @@ export const Header: React.FC = () => {
         <Container>
             <StyledH1>Bem vindos ao nosso chá de panela!</StyledH1>
             <Image><img src={imagemIH} alt="" /></Image>
-            <Verse>"Para que todos vejam. e saibam, e considerem, e juntamente entendam que a mão do senhor fez isso"</Verse>
+            <Verse>"Para que todos vejam, e saibam, e considerem, e juntamente entendam que a mão do senhor fez isso"</Verse>
             <ReferenceVerse>Isaías 41.21</ReferenceVerse>
         </Container>
     )

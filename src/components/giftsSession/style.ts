@@ -158,3 +158,53 @@ export const AmazonButton = styled.a`
     border-color: #ff9900;
   }
 `
+export const Overlay = styled.div`
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+`
+
+export const Modal = styled.div`
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 280px;
+  text-align: center;
+`
+
+export const ModalInput = styled.input`
+  width: 100%;
+  padding: 8px;
+  margin-top: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+`
+
+export const ModalButtons = styled.div`
+  display: flex;
+  gap: 10px;
+  margin-top: 16px;
+`
+
+export const ConfirmButton = styled.button`
+  flex: 1;
+  background: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+`
+
+export const CancelButton = styled.button`
+  flex: 1;
+  background: #ccc;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+`
+
+
