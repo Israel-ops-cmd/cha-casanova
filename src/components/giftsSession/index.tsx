@@ -205,17 +205,17 @@ export const Gifts: React.FC = () => {
         <FirstPart>
           <StyledH1>Lista de Presentes</StyledH1>
           <Styledp>
-            Preparamos essa lista com muito carinho para quem deseja nos presentear.
-            <br />
-            Sua presença já é um presente.
+            Preparamos esta lista com muito carinho para quem desejar nos presentear. <br></br>
+            Cada item é simbólico e pode ser adquirido no local de sua preferência. <br></br>
+            Fique à vontade — e saiba que a sua presença, para nós, já é um presente muito especial. 🧡
           </Styledp>
-          <StyledButton>Ver lista de presentes</StyledButton>
+          
         </FirstPart>
 
         <SecondPart>
           {!loading ? (
             gifts.map((gift) => (
-              <Card key={gift.id}>
+              <Card key={gift.id} selected={selectedGifts.includes(gift.id)}>
                 <CardImage>
                   <img src={gift.image} alt={gift.title} />
                 </CardImage>
