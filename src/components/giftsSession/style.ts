@@ -7,7 +7,7 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: ${pxToRem(200)};
+  margin-bottom: ${pxToRem(150)};
 `
 
 export const FirstPart = styled.div`
@@ -24,8 +24,8 @@ export const StyledH1 = styled.h1`
 `
 
 export const Styledp = styled.p`
-  max-width: ${pxToRem(350)};
-  margin-top: ${pxToRem(50)};
+  max-width: ${pxToRem(650)};
+  margin-top: ${pxToRem(15)};
   font-size: ${pxToRem(15)};
 `
 
@@ -58,18 +58,27 @@ export const SecondPart = styled.div`
   justify-content: center;
 `
 
-export const Card = styled.div`
+export const Card = styled.div<{ selected?: boolean }>`
   background-color: #ffffff;
   border-radius: ${pxToRem(16)};
   overflow: hidden;
   max-width: ${pxToRem(300)};
   box-shadow: 0 8px 25px rgba(0,0,0,0.06);
-  transition: transform 0.3s ease;
+  transition: all 0.3s ease;
 
   &:hover {
     transform: translateY(-6px);
   }
+
+  ${({ selected }) =>
+    selected &&
+    `
+      opacity: 0.5;
+      filter: grayscale(100%);
+      pointer-events: none;
+    `}
 `
+
 
 export const CardImage = styled.div`
   width: 100%;

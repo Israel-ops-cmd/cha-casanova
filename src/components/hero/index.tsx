@@ -9,8 +9,8 @@ export const Hero: React.FC = () => {
             <Elements>
                 <ul>
                     <li><a href="#presentes">Presentes</a></li>
-                    <li><a href="#presentes">Confirmação</a></li>
-                    <li>Contatos</li>
+                    <li><a href="#confirmação">Confirmação</a></li>
+                    <li><a href="#contatos">Contatos</a></li>
                 </ul>
             </Elements>
         </Container>
