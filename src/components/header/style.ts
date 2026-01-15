@@ -34,6 +34,7 @@ export const Container_3 = styled.div`
 export const StyledH1 = styled.h1`
     font-size: ${pxToRem(30)};
     font-family: 'Playfair Display', serif;
+    text-align: center;
 
     @media (max-width: 768px) {
         font-size: ${pxToRem(24)};
