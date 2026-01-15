@@ -110,7 +110,7 @@ export const Card = styled.div<{ selected?: boolean }>`
     `}
 
     @media (max-width: 768px) {
-      max-width: ${pxToRem(200)};
+      max-width: ${pxToRem(300)};
     }
 `
 
