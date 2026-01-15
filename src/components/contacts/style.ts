@@ -31,4 +31,13 @@ export const Container = styled.div`
         transform: translateY(-3px);
     }
 
+    @media (max-width: 1024px) {
+        gap: ${pxToRem(40)};
+    }
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        gap: ${pxToRem(20)};
+        text-align: center;
+    }
 `
