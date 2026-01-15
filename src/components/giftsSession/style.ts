@@ -27,6 +27,17 @@ export const Styledp = styled.p`
   max-width: ${pxToRem(650)};
   margin-top: ${pxToRem(15)};
   font-size: ${pxToRem(15)};
+
+  @media (max-width: 768px) {
+    margin-left: ${pxToRem(20)};
+    margin-right: ${pxToRem(20)};
+  }
+
+  @media (max-width: 480px) {
+    max-width: ${pxToRem(500)};
+    margin-left: ${pxToRem(20)};
+    margin-right: ${pxToRem(20)};
+  }
 `
 
 export const StyledButton = styled.button`
@@ -56,6 +67,26 @@ export const SecondPart = styled.div`
   gap: ${pxToRem(100)};
   width: 100%;
   justify-content: center;
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+    grid-template-columns: repeat(2, minmax(180px, 250px));
+    gap: ${pxToRem(50)};
+  }
+  
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr); /* mantém 2 */
+    gap: ${pxToRem(16)};
+    padding: 0 ${pxToRem(16)};
+    justify-items: center;
+  }
+
+  @media (max-width: 450px) {
+    grid-template-columns: 1fr;
+    gap: ${pxToRem(40)};
+    padding: 0 ${pxToRem(20)};
+    justify-items: center;
+  }
+
 `
 
 export const Card = styled.div<{ selected?: boolean }>`
@@ -77,6 +108,10 @@ export const Card = styled.div<{ selected?: boolean }>`
       filter: grayscale(100%);
       pointer-events: none;
     `}
+
+    @media (max-width: 768px) {
+      max-width: ${pxToRem(200)};
+    }
 `
 
 
