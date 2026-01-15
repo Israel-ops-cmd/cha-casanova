@@ -8,6 +8,20 @@ export const Container = styled.div`
     justify-content: center;
     margin-top: ${pxToRem(30)};
 `
+export const Container_2 = styled.div`
+    margin-top: ${pxToRem(30)};
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: ${pxToRem(80)};
+`
+export const Container_3 = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+`
 export const StyledH1 = styled.h1`
     font-size: ${pxToRem(30)};
     font-family: 'Playfair Display', serif;
@@ -27,7 +41,7 @@ export const Image = styled.div`
 `
 export const Verse = styled.p`
     margin-top: ${pxToRem(30)};
-    font-size: ${pxToRem(15)};
+    font-size: ${pxToRem(30)};
     max-width: ${pxToRem(500)};
     text-align: center;
     font-family: 'Playfair Display', serif;

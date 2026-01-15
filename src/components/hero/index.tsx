@@ -8,8 +8,8 @@ export const Hero: React.FC = () => {
             </NamesContainer>
             <Elements>
                 <ul>
-                    <li>Presentes</li>
-                    <li>Confirmação</li>
+                    <li><a href="#presentes">Presentes</a></li>
+                    <li><a href="#presentes">Confirmação</a></li>
                     <li>Contatos</li>
                 </ul>
             </Elements>

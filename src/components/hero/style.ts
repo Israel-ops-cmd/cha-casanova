@@ -19,7 +19,17 @@ export const Elements = styled.nav`
         list-style: none;
         margin: 0;
         padding: 0;
-        
+    }
+
+    a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 500;
+    cursor: pointer;
+
+        &:hover {
+        opacity: 0.7;
+        }
     }
 `
 
