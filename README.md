@@ -1,73 +1,96 @@
-# React + TypeScript + Vite
+🏠 Lista de Chá de Panela
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicação web desenvolvida em React para organizar nossa lista de presentes do chá de panela. A ideia é permitir que amigos e familiares escolham um presente de forma simples e prática.
 
-Currently, two official plugins are available:
+O projeto exibe os itens desejados, seus valores, e direciona diretamente para o link de compra.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+✨ Sobre o Projeto
 
-## React Compiler
+Este projeto foi criado para facilitar a visualização e seleção de presentes para nosso chá de panela.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+A interface é simples, direta e pensada para que qualquer pessoa consiga:
 
-## Expanding the ESLint configuration
+- Visualizar os presentes disponíveis
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Ver o valor de cada item
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- Acessar rapidamente o link de compra
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- Confirmar a escolha de um presente
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+🚀 Funcionalidades
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+✔ Exibição dos presentes em formato de cards
+✔ Imagem ilustrativa de cada item
+✔ Valor do produto
+✔ Botão de seleção
+✔ Redirecionamento para Amazon
+✔ Modal de confirmação
+✔ Integração com Google Sheets / SheetMonkey
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+🛠 Tecnologias Utilizadas
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- React
+
+- TypeScript
+
+- Styled Components 
+
+- Integrações via API (SheetMonkey / Google Apps Script)
+
+📦 Estrutura Básica
+
+O projeto é organizado em componentes, incluindo:
+
+- Header → Apresentação do evento + versículo
+
+- Lista de Presentes → Renderização dinâmica dos itens
+
+- Modal → Confirmação da escolha
+
+- Estilos → Componentes estilizados
+
+🎁 Como Funciona
+
+1-O usuário acessa a página
+
+2-Visualiza os presentes disponíveis
+
+3-Seleciona um item
+
+4-Confirma no modal
+
+5-É redirecionado para o link de compra
+
+6-As seleções podem ser registradas em uma planilha, dependendo da integração ativa.
+
+⚙ Personalização
+
+A lista de presentes é controlada por um array de objetos:
+
+type Gift = {
+  id: number
+  title: string
+  price: string
+  image: string
+  amazonLink: string
+}
+
+
+Novos itens podem ser adicionados facilmente editando o array gifts.
+
+💡 Objetivo
+
+Além de resolver uma necessidade real (nosso chá de panela 😄), o projeto também serviu como prática de:
+
+- Componentização em React
+
+- Manipulação de estado
+
+- Estruturação de dados
+
+- Integração com serviços externos
+
+Observação
+
+Este é um projeto pessoal desenvolvido com carinho para um momento muito especial das nossas vidas.
